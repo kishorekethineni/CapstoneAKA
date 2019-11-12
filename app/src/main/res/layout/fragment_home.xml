@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/autoimage"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_weight="2"
+        android:elevation="@android:dimen/app_icon_size">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView8"
+            android:layout_width="164dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="281dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Taste                           The                            Good"
+            android:textColor="#F7020202"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:padding="14dp"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+
+        <androidx.cardview.widget.CardView
+            android:background="@drawable/orangebg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/cv2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardBackgroundColor="@color/colorAccent"
+
+            android:layout_marginRight="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:layout_width="124dp"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="29dp"
+                    android:text="Home Services"
+                    android:textAlignment="center"
+                    android:textColor="#121211"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="100dp"
+          app:cardBackgroundColor="@color/colorAccent"
+            android:id="@+id/cv3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:layout_width="148dp"
+                    android:layout_height="68dp"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="29dp"
+                    android:text="Grocery"
+                    android:textAlignment="center"
+                    android:textColor="#121211"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/orangemiddle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="5dp"
+            android:id="@+id/cv4"
+            app:cardCornerRadius="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:layout_width="148dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_phonelink_erase_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="29dp"
+                    android:text="Food"
+                    android:textAlignment="center"
+                    android:textColor="#121211"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/orangemiddle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="5dp"
+            android:id="@+id/cv5"
+            app:cardCornerRadius="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:layout_width="148dp"
+                    android:layout_height="68dp"
+                    app:srcCompat="@drawable/ic_phonelink_erase_black_24dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="29dp"
+                    android:text="Laundry"
+                    android:textAlignment="center"
+                    android:textColor="#121211"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/orangelight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="5dp"
+            android:id="@+id/cv6"
+            app:cardCornerRadius="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:layout_width="148dp"
+                    android:layout_height="68dp"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="29dp"
+                    android:text="Blog"
+                    android:textAlignment="center"
+                    android:textColor="#121211"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="5dp"
+            android:id="@+id/cv7"
+            app:cardBackgroundColor="@color/orangelight"
+            app:cardCornerRadius="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:layout_width="148dp"
+                    android:layout_height="68dp"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="29dp"
+                    android:text="Blood Donations"
+                    android:textAlignment="center"
+                    android:textColor="#121211"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</LinearLayout>
